@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\luax64asm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\buildvm.h" />
+    <ClInclude Include="include\buildvm_libbc.h" />
+    <ClInclude Include="include\lauxlib.h" />
+    <ClInclude Include="include\lj_alloc.h" />
+    <ClInclude Include="include\lj_arch.h" />
+    <ClInclude Include="include\lj_asm.h" />
+    <ClInclude Include="include\lj_asm_arm.h" />
+    <ClInclude Include="include\lj_asm_arm64.h" />
+    <ClInclude Include="include\lj_asm_mips.h" />
+    <ClInclude Include="include\lj_asm_ppc.h" />
+    <ClInclude Include="include\lj_asm_x86.h" />
+    <ClInclude Include="include\lj_bc.h" />
+    <ClInclude Include="include\lj_bcdump.h" />
+    <ClInclude Include="include\lj_buf.h" />
+    <ClInclude Include="include\lj_carith.h" />
+    <ClInclude Include="include\lj_ccall.h" />
+    <ClInclude Include="include\lj_ccallback.h" />
+    <ClInclude Include="include\lj_cconv.h" />
+    <ClInclude Include="include\lj_cdata.h" />
+    <ClInclude Include="include\lj_char.h" />
+    <ClInclude Include="include\lj_clib.h" />
+    <ClInclude Include="include\lj_cparse.h" />
+    <ClInclude Include="include\lj_crecord.h" />
+    <ClInclude Include="include\lj_ctype.h" />
+    <ClInclude Include="include\lj_debug.h" />
+    <ClInclude Include="include\lj_def.h" />
+    <ClInclude Include="include\lj_dispatch.h" />
+    <ClInclude Include="include\lj_emit_arm.h" />
+    <ClInclude Include="include\lj_emit_arm64.h" />
+    <ClInclude Include="include\lj_emit_mips.h" />
+    <ClInclude Include="include\lj_emit_ppc.h" />
+    <ClInclude Include="include\lj_emit_x86.h" />
+    <ClInclude Include="include\lj_err.h" />
+    <ClInclude Include="include\lj_errmsg.h" />
+    <ClInclude Include="include\lj_ff.h" />
+    <ClInclude Include="include\lj_ffrecord.h" />
+    <ClInclude Include="include\lj_frame.h" />
+    <ClInclude Include="include\lj_func.h" />
+    <ClInclude Include="include\lj_gc.h" />
+    <ClInclude Include="include\lj_gdbjit.h" />
+    <ClInclude Include="include\lj_ir.h" />
+    <ClInclude Include="include\lj_ircall.h" />
+    <ClInclude Include="include\lj_iropt.h" />
+    <ClInclude Include="include\lj_jit.h" />
+    <ClInclude Include="include\lj_lex.h" />
+    <ClInclude Include="include\lj_lib.h" />
+    <ClInclude Include="include\lj_mcode.h" />
+    <ClInclude Include="include\lj_meta.h" />
+    <ClInclude Include="include\lj_obj.h" />
+    <ClInclude Include="include\lj_parse.h" />
+    <ClInclude Include="include\lj_prng.h" />
+    <ClInclude Include="include\lj_profile.h" />
+    <ClInclude Include="include\lj_record.h" />
+    <ClInclude Include="include\lj_serialize.h" />
+    <ClInclude Include="include\lj_snap.h" />
+    <ClInclude Include="include\lj_state.h" />
+    <ClInclude Include="include\lj_str.h" />
+    <ClInclude Include="include\lj_strfmt.h" />
+    <ClInclude Include="include\lj_strscan.h" />
+    <ClInclude Include="include\lj_tab.h" />
+    <ClInclude Include="include\lj_target.h" />
+    <ClInclude Include="include\lj_target_arm.h" />
+    <ClInclude Include="include\lj_target_arm64.h" />
+    <ClInclude Include="include\lj_target_mips.h" />
+    <ClInclude Include="include\lj_target_ppc.h" />
+    <ClInclude Include="include\lj_target_x86.h" />
+    <ClInclude Include="include\lj_trace.h" />
+    <ClInclude Include="include\lj_traceerr.h" />
+    <ClInclude Include="include\lj_udata.h" />
+    <ClInclude Include="include\lj_vm.h" />
+    <ClInclude Include="include\lj_vmevent.h" />
+    <ClInclude Include="include\lua.h" />
+    <ClInclude Include="include\lua.hpp" />
+    <ClInclude Include="include\luaconf.h" />
+    <ClInclude Include="include\luajit_rolling.h" />
+    <ClInclude Include="include\lualib.h" />
+    <ClInclude Include="src\luax64asm.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lua\luax64asm.lua" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\buildvm.lib" />
+    <Library Include="lib\lua51.lib" />
+    <Library Include="lib\luajit.lib" />
+    <Library Include="lib\minilua.lib" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e5480ed9-4828-49ed-809c-35c9d3b247e4}</ProjectGuid>
+    <RootNamespace>LuaX64ASM</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;LUAX64ASM_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;LUAX64ASM_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;LUAX64ASM_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\Users\Admin\source\repos\LuaX64ASM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile />
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>C:\Users\Admin\source\repos\LuaX64ASM\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>luajit.lib;lua51.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;LUAX64ASM_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\Users\Admin\source\repos\LuaX64ASM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile />
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>C:\Users\Admin\source\repos\LuaX64ASM\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>luajit.lib;lua51.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
